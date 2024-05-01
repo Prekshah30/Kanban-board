@@ -62,7 +62,7 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                         dispatch(boardsSlice.actions.setBoardActive({ index }));
                       }}
                     >
-                      <img src={boardIcon} className="  filter-white  h-4 " />{" "}
+                      <img src={boardIcon} alt="boardicon" className="  filter-white  h-4 " />{" "}
                       <p className=" text-lg font-bold ">{board.name}</p>
                     </div>
                   ))}
@@ -73,7 +73,7 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                       setIsBoardModalOpen(true);
                     }}
                   >
-                    <img src={boardIcon} className="   filter-white  h-4 " />
+                    <img src={boardIcon} alt="boardicon" className="filter-white  h-4 " />
                     <p className=" text-lg font-bold  ">Create New Board </p>
                   </div>
                 </div>

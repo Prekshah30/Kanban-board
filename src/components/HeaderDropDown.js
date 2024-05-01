@@ -51,7 +51,7 @@ function HeaderDropDown({ setOpenDropdown, setIsBoardModalOpen }) {
                 dispatch(boardsSlice.actions.setBoardActive({ index }));
               }}
             >
-              <img src={boardIcon} className="  filter-white  h-4 " />{" "}
+              <img src={boardIcon} alt="board" className="  filter-white  h-4 " />{" "}
               <p className=" text-lg font-bold  ">{board.name}</p>
             </div>
           ))}
@@ -62,12 +62,12 @@ function HeaderDropDown({ setOpenDropdown, setIsBoardModalOpen }) {
             setOpenDropdown(false)
           }}
           className=" flex items-baseline space-x-2  text-[#635fc7] px-5 py-4  ">
-            <img src={boardIcon} className="   filter-white  h-4 " />
+            <img src={boardIcon} alt="board" className=" filter-white  h-4 " />
             <p className=" text-lg font-bold  ">Create New Board </p>
           </div>
 
           <div className=" mx-2  p-4  space-x-2 bg-slate-100 dark:bg-[#20212c] flex justify-center items-center rounded-lg">
-            <img src={lightIcon} alt="sun indicating light mode" />
+            <img src={lightIcon}  alt="sun indicating light mode" />
 
             <Switch
               checked={darkSide}
