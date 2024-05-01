@@ -24,9 +24,11 @@ function Column({ colIndex }) {
   const boards = useSelector((state) => state.boards);
   const board = boards.find((board) => board.isActive === true);
   const col = board.columns.find((col, i) => i === colIndex);
+
+  // eslint-disable-next-line
   useEffect(() => {
     setColor(shuffle(colors).pop())
-  }, [colors]);
+  }, [colors,dispatch]);
 
 
 
